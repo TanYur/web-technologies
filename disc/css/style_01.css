@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #340d40;
+    font-family: 'Lato', sans-serif;
+    color: #EDE6FA;
+}
+
+.block {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+
+    padding: 0 10px;
+}
+
+.menu-main {
+    height: 41px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #340d40;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.menu-main a {
+    text-decoration: none;
+    color: #EDE6FA;
+}
+
+.menu-intro {
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-intro .icon,
+.deskrip-mobile .icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0CA9B7;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.deskrip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    height: 100%;
+
+}
+
+.deskrip .item {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.deskrip .item .text {
+    font-size: 10px;
+}
+
+.menu-intro .contact-data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.menu-intro .contact-data .tel,
+.logo-mobile .contact-data-mobile .tel {
+    font-weight: 900;
+}
+
+.menu-intro .contact-data span,
+.logo-mobile .contact-data-mobile span {
+    color: #913d88;
+}
+
+.btn {
+    width: 188px;
+    height: 40px;
+    border-radius: 4px;
+    background: linear-gradient(1deg, #0CA9B7, #015A60);
+    border: none;
+    box-shadow: 0px 0px 3px rgba(2, 2, 2, 0.3);
+    font-size: 18px;
+    color: #EDE6FA;
+}
+
+.representations {
+    width: 100%;
+    height: 578px;
+    background-image: url('../img/lukasz-lada-LtWFFVi1RXQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    border-top: 3px solid#3b26b0;
+    border-bottom: 3px solid #0CA9B7;
+    color: #EDE6FA;
+}
+
+.representations .content {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.representations .content .img {
+    width: 40%;
+    height: 100%;
+    background-image: url('../img/women01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.representations .content .deskription {
+    width: 55%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.representations .content .deskription p {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.representations .content .deskription h1 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.representations .content .deskription input {
+    position: relative;
+    width: 320px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+
+}
+
+input:focus {
+    box-shadow: 0 0 7px 0 #015A60;
+}
+
+input::-webkit-input-placeholder:focus {
+    color: rgba(2, 2, 2, 0.3);
+}
+
+.representations .content .deskription input,
+.representations .content .deskription button {
+    display: inline;
+}
+
+.inp {
+    position: relative;
+}
+
+.representations .content .deskription ion-icon {
+    position: absolute;
+    left: 285px;
+    top: 8px;
+    display: block;
+    z-index: 10;
+    color: #3b3b3b;
+    font-size: 24px;
+}
+
+.stages {
+    display: block;
+}
+
+.stages .title,
+.portfolio .title {
+    margin: 50px auto 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 80%;
+    height: 2px;
+    background-color: #913d88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stages .title p,
+.portfolio .title p {
+    display: inline-block;
+    background-color: #340d40;
+    padding: 0 20px;
+    color: #0CA9B7;
+    font-weight: 600;
+}
+
+.grid-icon {
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 249px 249px 249px 249px;
+    grid-template-rows: 249px 249px 249px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-icon img {
+    width: 180px;
+    height: auto;
+}
+
+.grid-icon img:nth-child(3) {
+    width: 220px;
+}
+
+.grid-icon p {
+    color: #913d88;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mobile-menu,
+.deskrip-mobile {
+    display: none;
+}
+
+.logo img {
+    width: 105px;
+}
+
+.portfolio .carousel {
+    border-top: 3px solid#913d88;
+    border-bottom: 3px solid #0CA9B7;
+}
+.portfolio  {
+    border-top: 3px solid#913d88;
+    /* border-bottom: 3px solid #0CA9B7; */
+    margin-top: 20px;
+}
+
+.contacts-wrapper {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-wrapper .footer {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-wrapper .footer ion-icon {
+    color: #913d88;
+}
+
+.grid-icon-item{
+    position: relative;
+}
+
+.stages-hover,
+.stages-bg {
+    display: none;
+}
+
+.stages-hover-visible,
+.stages-bg-visible {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: auto;
+    top: 0;
+
+}
+
+.stages-hover-visible {
+    background-color: transparent;   
+    z-index: 10;
+    padding: 10px;
+    color: #FEFEFD;
+    border-radius: 8px;
+    position: absolute;
+    background: rgba(52, 13, 63, 0.36);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-bottom: 1px solid rgb(145, 61, 136);
+    border-left: 1px solid rgb(145, 61, 136);
+   }
+
+@media(max-width: 1010px) {
+
+    .block {
+        width: 760px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+    .menu-intro {
+        height: 90px;
+    }
+
+    .deskrip {
+        width: 450px;
+    }
+
+    .menu-intro .contact-data {
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 35px;
+    }
+
+    .menu-intro .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .menu-intro .icon .text {
+        font-size: 8px;
+        letter-spacing: .1px;
+    }
+
+    .menu-intro .icon .text br {
+        display: none;
+    }
+
+    .grid-icon {
+        margin-top: 40px;
+        grid-template-columns: 180px 180px 180px 180px;
+        grid-template-rows: 180px 180px 180px;
+    }
+
+    .grid-icon img {
+        width: 120px;
+
+    }
+
+    .representations .content .deskription p {
+        font-size: 25px;
+    }
+
+    .representations .content .deskription h1 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .representations .content .deskription button {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .block {
+        width: 350px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .menu-main,
+    .menu-intro {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-burger {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        text-align: right;
+        padding: 0 10px;
+        z-index: 0;
+    }
+
+    .mobile-burger ion-icon {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .menu-main-mobile,
+    .menu-bg {
+        display: none;
+    }
+
+    .menu-main-mobile-visible {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-color: transparent;
+        border-radius: 8px;
+        width: 200px;
+        height: 230px;
+        z-index: 10;
+        right: 10px;
+        padding-left: 10px;
+        position: absolute;
+    }
+
+    .menu-bg-visible {
+        display: block;
+        border-radius: 8px;
+        position: absolute;
+        right: 10px;
+        background: rgba(52, 13, 63, 0.36);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        border-bottom: 1px solid rgb(145, 61, 136);
+        border-left: 1px solid rgb(145, 61, 136);
+        width: 200px;
+        height: 230px;
+        z-index: 9;
+    }
+
+    .menu-main-mobile-visible a {
+        text-decoration: none;
+        color: #FEFEFD;
+    }
+
+    .logo-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .contact-data-mobile {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+
+    }
+
+    .deskrip-mobile {
+        display: block;
+    }
+
+    .content .img {
+        display: none;
+    }
+
+    .representations .content .deskription {
+        width: 100%;
+    }
+
+    .representations .content .deskription p {
+        font-size: 20px;
+    }
+
+    .representations .content .deskription h1 {
+        font-size: 14px;
+    }
+
+    .representations .content .deskription h1 br {
+        display: none;
+    }
+
+    .stages {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .stages .title {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .grid-icon {
+        width: 460px;
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+    }
+
+    .grid-icon img {
+        width: 120px;
+
+    }
+
+    .grid-icon p {
+        font-size: 10px;
+    }
+
+    .deskrip-mobile .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 95%;
+        border: 2px solid #913d88;
+        border-radius: 8px;
+        margin: 15px auto;
+        padding: 0 5px;
+
+    }
+
+    .deskrip-mobile .item .icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    .deskrip-mobile .item .text {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 470px) {
+    .stages .title {
+        font-size: 12px;
+        background-color: transparent;
+    }
+
+    .grid-icon {
+        width: 350px;
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 170px 170px 170px 170px;
+        gap: 5px;
+
+    }
+
+    .grid-icon p {
+        font-size: 10px;
+    }
+
+    .grid-icon img {
+        width: 120px;
+
+    }
+}
